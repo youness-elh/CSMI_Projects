@@ -1,0 +1,5 @@
+set dgrid3d 10,1000
+set hidden3d
+splot 'plot.dat' u 1:2:3 with lp title 'numeric'
+pause -1
+

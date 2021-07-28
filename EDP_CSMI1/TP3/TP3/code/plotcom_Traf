@@ -1,0 +1,3 @@
+plot 	'plot_Traf.dat' using 1:2 with line title "Différences finies"
+		
+pause -1

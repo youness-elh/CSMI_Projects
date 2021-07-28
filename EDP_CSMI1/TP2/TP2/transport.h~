@@ -1,0 +1,33 @@
+#ifndef _TRANSPORT_H
+#define _TRANSPORT_H
+
+typedef struct df_transport{
+
+  int nx;
+  double Lx;
+  
+  double dx, dt, tmax;
+
+  double *xx;
+  
+  double *un;
+  double *unp1;
+
+  double *u_exact;
+
+
+} df_chaleur;
+
+extern df_transport null_dfc;
+
+void init_df_transport(df_transport *dfc, int nx, double Lx);
+
+void u_exact(double x, double *u);
+
+void plot_data(df_transport *dfc);
+
+void compute_serie(df_transport *dfc, double tmax, int ns);
+
+void compute_df(df_transport *dfc, double tmax, double cfl);
+
+#endif

@@ -1,0 +1,4 @@
+
+plot 	'plot.dat' using 1:2 with line title "Différences finies",\
+		'plot.dat' using 1:3 with line title "Solution exacte"
+pause -1
